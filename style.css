@@ -1,0 +1,176 @@
+/*
+font-family: 'Josefin Sans', sans-serif;
+font-family: 'Droid Serif', serif;
+font-family: 'Roboto Mono', monospace;
+*/
+
+.container{
+    width: 100%;
+    padding-left: 0;
+    padding-right: 0;
+}
+                        /*----- Horizontal Navigation bar -----*/
+.navbar-nav {
+    width: 100%;
+    text-align: center;
+}
+ 
+.navbar-nav > li {
+    float: none;
+    display: inline-block;
+}
+
+.navbar-nav > li > a {
+    color: whitesmoke;
+    font-size: 1.2em;
+    font-family: 'Roboto Mono', monospace;
+}
+
+.navbar-nav > li > a:hover {
+    background-color: transparent;
+}
+
+.icon-bar {
+    background-color: ghostwhite;
+}
+
+.navbar-collapse {
+    box-shadow: none;
+    webkit-box-shadow: none;
+}
+
+.navbar-toggle {
+   margin-top: -2.2em;
+}
+
+#bs-example-navbar-collapse-1 {
+    margin-left: 4em;
+}
+/*------------ -----------*/
+
+                            /*----- 3 Column Grid Layout -------*/
+.left-col {
+    padding-top: 5em;
+    padding-left: 4em;
+}
+
+                            /*----- Left Column Grid Layout -------*/
+#logo {
+    position: fixed;
+    max-width: 3.5em;
+    width: 100%;
+}
+
+.social-icons {
+    position: fixed;
+    max-width: 3em;
+    width: 100%;
+    bottom: 0;
+    margin-bottom: 5em;
+}
+
+#fb {
+    padding-top: 2em;
+}
+
+#tw {
+    padding-top: 2em;
+}
+
+#insta {
+    padding-top: 2em;
+}
+
+                            /*----- Home Page -------*/
+.computers-img {
+    background-image: url(images/laptop_mac_3.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-color: transparent;
+    height: 100vh;
+    width: 100%;
+}
+
+.row {
+    margin-left: 0;
+    margin-right: 0;
+}
+
+                            /*----- Center Column Grid Layout -------*/
+.main-text {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.hero-header {
+    font-family: 'Josefin Sans', sans-serif;
+    color: ghostwhite;
+    font-size: 4vw;
+    font-weight: 800;
+    margin-top: 1.5em;
+}
+
+.hero-subheader {
+    font-family: 'Josefin Sans', sans-serif;
+    color: ghostwhite;
+    font-size: 2.5vw;
+    font-weight: 800;
+    margin-top: 1.5em;
+}
+
+.move-down{
+    height: 70vh;
+}
+
+.about-me {
+    width: 100%;
+    padding: 0;
+    margin-bottom: 10em;
+}
+
+.hero-text {
+    font-family: 'Droid Serif', serif;
+    font-size: 2vw;
+    color: lightcoral;
+    font-weight: 600;
+}
+
+.dot {
+    color: yellow;
+    font-weight: 800;
+    font-size: 200px;
+}
+
+/*------------ -----------*/
+
+                                    /*----- Footer -------*/
+.footer {
+    height: 100vh;
+    background-color: #8c8c8c;
+}
+
+.hero-footer {
+    font-family: 'Josefin Sans', sans-serif;
+    color: ghostwhite;
+    font-size: 1.3vw;
+    font-weight: 800;
+    margin-top: 15em;
+}
+
+.hero-footer-md {
+    font-family: 'Josefin Sans', sans-serif;
+    color: ghostwhite;
+    font-size: 2.8vw;
+    font-weight: 800;
+    margin-top: -0.3em;  
+}
+
+.hero-email {
+    font-family: 'Josefin Sans', sans-serif;
+    color: ghostwhite;
+    font-size: 2.8vw;
+    font-weight: 800;
+    margin-top: 3em;  
+}
