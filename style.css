@@ -145,6 +145,46 @@ font-family: 'Roboto Mono', monospace;
 
 /*------------ -----------*/
 
+
+                                    /*----------- Work ------------*/
+
+.work-bg {
+    background-color: lightcoral;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 100%;
+    width: 100%;
+}
+
+.work-menu {
+    list-style: none;
+    position: fixed;
+    
+}
+
+.work-menu-items {
+    margin-top: 1em;
+    margin-bottom: 1em;
+    font-size: 1.3em; 
+}
+
+.work-menu > li > a {
+    color: white;
+    text-decoration: none;
+}
+
+.work-content {
+    list-style: none;
+    margin-right: -1.1em;
+}
+
+.work-img {
+    max-width: 650px;
+    width: 100%;
+}
+
+/*------------ ------------*/
                                     /*----- Footer -------*/
 .footer {
     height: 100vh;
