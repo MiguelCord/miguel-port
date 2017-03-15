@@ -9,10 +9,13 @@ font-family: 'Roboto Mono', monospace;
     padding-left: 0;
     padding-right: 0;
 }
-                        /*----- Horizontal Navigation bar -----*/
+
+
+/*----- Horizontal Navigation bar -----*/
 .navbar-nav {
     width: 100%;
     text-align: center;
+    margin-top: 2em;
 }
  
 .navbar-nav > li {
@@ -31,7 +34,7 @@ font-family: 'Roboto Mono', monospace;
 }
 
 .icon-bar {
-    background-color: ghostwhite;
+    background-color: yellow;
 }
 
 .navbar-collapse {
@@ -48,13 +51,25 @@ font-family: 'Roboto Mono', monospace;
 }
 /*------------ -----------*/
 
-                            /*----- 3 Column Grid Layout -------*/
+
+
+/*----- Work-Page Horizontal Navigation bar -----*/
+.go-left-sm {
+    margin-left: -2.18em;
+}
+/*------------ -----------*/
+
+
+
+/*----- 3 Column Grid Layout -------*/
 .left-col {
     padding-top: 5em;
     padding-left: 4em;
 }
 
-                            /*----- Left Column Grid Layout -------*/
+
+
+/*----- Left Column Grid Layout -------*/
 #logo {
     position: fixed;
     max-width: 3.5em;
@@ -81,7 +96,7 @@ font-family: 'Roboto Mono', monospace;
     padding-top: 2em;
 }
 
-                            /*----- Home Page -------*/
+/*----- Home Page -------*/
 .computers-img {
     background-image: url(images/laptop_mac_3.jpg);
     background-repeat: no-repeat;
@@ -97,11 +112,20 @@ font-family: 'Roboto Mono', monospace;
     margin-right: 0;
 }
 
-                            /*----- Center Column Grid Layout -------*/
+/*----- Center Column Grid Layout -------*/
 .main-text {
     width: 100%;
-    margin: 0;
     padding: 0;
+    margin-top: 8em;
+}
+
+.hero-header-name {
+    font-family: 'Josefin Sans', sans-serif;
+    color: ghostwhite;
+    font-size: 5vw;
+    font-weight: 800;
+    margin-top: 1.5em;
+    margin-bottom: -.5em;
 }
 
 .hero-header {
@@ -109,7 +133,6 @@ font-family: 'Roboto Mono', monospace;
     color: ghostwhite;
     font-size: 4vw;
     font-weight: 800;
-    margin-top: 1.5em;
 }
 
 .hero-subheader {
@@ -133,7 +156,7 @@ font-family: 'Roboto Mono', monospace;
 .hero-text {
     font-family: 'Droid Serif', serif;
     font-size: 2vw;
-    color: lightcoral;
+    color: #ff6b6c;
     font-weight: 600;
 }
 
@@ -146,7 +169,7 @@ font-family: 'Roboto Mono', monospace;
 /*------------ -----------*/
 
 
-                                    /*----------- Work ------------*/
+/*----------- Work Page ------------*/
 
 .work-bg {
     background-color: lightcoral;
@@ -159,8 +182,7 @@ font-family: 'Roboto Mono', monospace;
 
 .work-menu {
     list-style: none;
-    position: fixed;
-    
+    position: fixed; 
 }
 
 .work-menu-items {
@@ -185,7 +207,92 @@ font-family: 'Roboto Mono', monospace;
 }
 
 /*------------ ------------*/
-                                    /*----- Footer -------*/
+
+
+
+/*----------- Expertise Page ------------*/
+                                    
+.expertise-bg {
+    background-color: #fffffb;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 100%;
+    width: 100%;
+}
+
+.expertise-nav > li > a {
+    color: black;
+    font-size: 1.2em;
+    font-family: 'Roboto Mono', monospace;
+}
+
+.hero-header-expertise {
+    font-family: 'Josefin Sans', sans-serif;
+    color: black;
+    font-size: 4vw;
+    font-weight: 800;
+}
+
+.move-down-e {
+    height: 30vh;
+}
+
+.box-text {
+    background-color: #3581b8;
+    position: relative;
+    height: 440px;
+}
+
+.expertise-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+    padding-left: 3em;
+    padding-right: 3em;
+}
+
+.expertise-header {
+    font-family: 'Josefin Sans', sans-serif;
+    color: #fffffb;
+    font-size: 2vw;
+    font-weight: 800;
+}
+
+.expertise-body {
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 1.3vw;
+    color: #fffffb;
+    font-weight: 600;
+}
+
+.box-img {
+    position: relative;
+    height: 440px;
+}
+
+.experience-imgs {
+    max-width: 250px;
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+}
+
+.move-box-down {
+    margin-bottom: 3em;
+}
+                                    
+
+/*------------ ------------*/
+
+
+
+/*----- Footer -------*/
 .footer {
     height: 100vh;
     background-color: #8c8c8c;
@@ -196,7 +303,7 @@ font-family: 'Roboto Mono', monospace;
     color: ghostwhite;
     font-size: 1.3vw;
     font-weight: 800;
-    margin-top: 15em;
+    margin-top: 8em;
 }
 
 .hero-footer-md {
@@ -207,10 +314,6 @@ font-family: 'Roboto Mono', monospace;
     margin-top: -0.3em;  
 }
 
-.hero-email {
-    font-family: 'Josefin Sans', sans-serif;
-    color: ghostwhite;
-    font-size: 2.8vw;
-    font-weight: 800;
-    margin-top: 3em;  
+a:hover {
+    text-decoration: none;
 }
