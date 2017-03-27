@@ -27,19 +27,53 @@ font-family: 'Roboto Mono', monospace;
     color: whitesmoke;
     font-size: 1.2em;
     font-family: 'Roboto Mono', monospace;
+    z-index: 1;
 }
 
 .navbar-nav > li > a:hover {
     background-color: transparent;
 }
 
+.navbar-nav > li > a:active { 
+    background-color: transparent; 
+}
+
+.navbar-nav > li > a:focus { 
+    background-color: transparent; 
+}
+
+.navbar-nav > li > a:before {
+    content: '';
+    right:10%;
+    left:100%;
+    height:5%;
+    background: #FFFB17;
+    transition: 0.5s ease;
+    -o-transition: 0.5s ease;
+    -webkit-transition: 0.5s ease;
+    -moz-transition: 0.5s ease;
+    -ms-transition: 0.5s ease;
+    bottom: 0;
+    z-index: -1;
+    position: absolute;
+    transform: translate(0%, -250%);
+}
+
+.navbar-nav a:hover:before{
+    left:0;
+}
+
+.navbar-nav a:hover:before{
+    left:5px;
+}
+
 .icon-bar {
-    background-color: yellow;
+    background-color: #ff6b6c;
 }
 
 .navbar-collapse {
     box-shadow: none;
-    webkit-box-shadow: none;
+    -webkit-box-shadow: none;
 }
 
 .navbar-toggle {
@@ -49,6 +83,7 @@ font-family: 'Roboto Mono', monospace;
 #bs-example-navbar-collapse-1 {
     margin-left: 4em;
 }
+
 /*------------ -----------*/
 
 
@@ -76,29 +111,12 @@ font-family: 'Roboto Mono', monospace;
     width: 100%;
 }
 
-.social-icons {
-    position: fixed;
-    max-width: 3em;
-    width: 100%;
-    bottom: 0;
-    margin-bottom: 5em;
-}
+/*-------------- ----------------*/
 
-#fb {
-    padding-top: 2em;
-}
-
-#tw {
-    padding-top: 2em;
-}
-
-#insta {
-    padding-top: 2em;
-}
 
 /*----- Home Page -------*/
 .computers-img {
-    background-image: url(images/laptop_mac_3.jpg);
+    background-image: url(images/front.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -153,15 +171,8 @@ font-family: 'Roboto Mono', monospace;
     margin-bottom: 10em;
 }
 
-.hero-text {
-    font-family: 'Droid Serif', serif;
-    font-size: 2vw;
-    color: #ff6b6c;
-    font-weight: 600;
-}
-
 .dot {
-    color: yellow;
+    color: #FFFB17;
     font-weight: 800;
     font-size: 200px;
 }
@@ -235,11 +246,11 @@ font-family: 'Roboto Mono', monospace;
 }
 
 .move-down-e {
-    height: 30vh;
+    height: 25vh;
 }
 
 .box-text {
-    background-color: #3581b8;
+    background-color: #4dc3ff;
     position: relative;
     height: 440px;
 }
@@ -255,7 +266,7 @@ font-family: 'Roboto Mono', monospace;
 }
 
 .expertise-header {
-    font-family: 'Josefin Sans', sans-serif;
+    font-family: 'Roboto Mono', monospace;
     color: #fffffb;
     font-size: 2vw;
     font-weight: 800;
@@ -292,22 +303,67 @@ font-family: 'Roboto Mono', monospace;
 
 
 
+/*----------- About Page ------------*/
+.about-header-img {
+    width: 100%;
+}
+
+.about-img {
+    width: 100%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.move-down-about {
+    height: 35vh;
+}
+
+#intro-about {
+    font-family: 'Roboto Mono', monospace;
+    line-height: 1.4em;
+    margin-top: -.3em;
+}
+
+.hero-text {
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 1.5em;
+    font-weight: 400;
+    line-height: 1.4em;
+}
+
+.red {
+    color: #ff6b6c;
+}
+
+.miguel-photo {
+    width: 100%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+/*------------ ------------*/
+
+
+
 /*----- Footer -------*/
 .footer {
     height: 100vh;
-    background-color: #8c8c8c;
+    background-color: #0d0d0d;
 }
 
 .hero-footer {
-    font-family: 'Josefin Sans', sans-serif;
+    font-family: 'Roboto Mono', monospace;
     color: ghostwhite;
     font-size: 1.3vw;
     font-weight: 800;
-    margin-top: 8em;
+    margin-top: 5em;
 }
 
 .hero-footer-md {
-    font-family: 'Josefin Sans', sans-serif;
+    font-family: 'Roboto Mono', monospace;
     color: ghostwhite;
     font-size: 2.8vw;
     font-weight: 800;
@@ -317,3 +373,72 @@ font-family: 'Roboto Mono', monospace;
 a:hover {
     text-decoration: none;
 }
+
+/*------------ ------------*/
+
+
+
+/*---------- Social Links----------*/
+
+.social-icons {
+    text-align: center;
+    margin-top: 6em;
+}
+
+.hero-footer-social {
+    font-family: 'Roboto Mono', monospace;
+    color: ghostwhite;
+    font-size: 1.3vw;
+    font-weight: 800;
+    margin-top: 2em;
+}
+
+a .hero-footer-social {
+    display: inline;
+    margin-left: 1.3em;
+    margin-right: 1.3em;
+}
+
+hr {
+    width: 20%;
+    margin-top: 60px;
+}
+
+/*
+.underline:hover {
+    background-color: transparent;
+}
+
+.underline:active { 
+    background-color: transparent; 
+}
+
+.underline:focus { 
+    background-color: transparent; 
+}
+
+.underline:before {
+    content: 'hola';
+    right:10%;
+    left:100%;
+    height:.5%;
+    background: #FFFB17;
+    transition: 0.5s ease;
+    -o-transition: 0.5s ease;
+    -webkit-transition: 0.5s ease;
+    -moz-transition: 0.5s ease;
+    -ms-transition: 0.5s ease;
+    bottom: 0;
+    z-index: 1;
+    position: absolute;
+    
+}
+
+.underline:hover:before{
+    left:0;
+}
+
+.underline:hover:before{
+    left:5px;
+}
+*/
