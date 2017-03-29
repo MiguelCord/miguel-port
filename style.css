@@ -111,6 +111,13 @@ font-family: 'Roboto Mono', monospace;
     width: 100%;
 }
 
+#hz-logo {
+    max-width: 150px;
+    width: 100%;
+    margin-top: -3em;
+    display: none;
+}
+
 /*-------------- ----------------*/
 
 
@@ -135,6 +142,7 @@ font-family: 'Roboto Mono', monospace;
     width: 100%;
     padding: 0;
     margin-top: 8em;
+    z-index: -1;
 }
 
 .hero-header-name {
@@ -148,7 +156,7 @@ font-family: 'Roboto Mono', monospace;
 
 .hero-header {
     font-family: 'Josefin Sans', sans-serif;
-    color: ghostwhite;
+    color: white;
     font-size: 4vw;
     font-weight: 800;
 }
@@ -162,7 +170,7 @@ font-family: 'Roboto Mono', monospace;
 }
 
 .move-down{
-    height: 70vh;
+    height: 25vh;
 }
 
 .about-me {
@@ -193,7 +201,7 @@ font-family: 'Roboto Mono', monospace;
 
 .work-menu {
     list-style: none;
-    position: fixed; 
+ 
 }
 
 .work-menu-items {
@@ -203,18 +211,42 @@ font-family: 'Roboto Mono', monospace;
 }
 
 .work-menu > li > a {
-    color: white;
+    color: black;
     text-decoration: none;
 }
 
 .work-content {
     list-style: none;
-    margin-right: -1.1em;
+    margin-right: -10em;
+}
+
+.work-content-items {
+    margin-top: 35px;
 }
 
 .work-img {
     max-width: 650px;
     width: 100%;
+}
+
+.item {
+  position: relative;
+  border: 1px solid #333;
+  margin: 2%;
+  overflow: hidden;
+  width: 540px;
+}
+
+.item img {
+  -moz-transition: all 0.3s;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+.item:hover img {
+  -moz-transform: scale(1.1);
+  -webkit-transform: scale(1.1);
+  transform: scale(1.1);
 }
 
 /*------------ ------------*/
@@ -404,41 +436,16 @@ hr {
     margin-top: 60px;
 }
 
-/*
-.underline:hover {
-    background-color: transparent;
-}
+/*----------------------------------------*/
 
-.underline:active { 
-    background-color: transparent; 
-}
-
-.underline:focus { 
-    background-color: transparent; 
-}
-
-.underline:before {
-    content: 'hola';
-    right:10%;
-    left:100%;
-    height:.5%;
-    background: #FFFB17;
-    transition: 0.5s ease;
-    -o-transition: 0.5s ease;
-    -webkit-transition: 0.5s ease;
-    -moz-transition: 0.5s ease;
-    -ms-transition: 0.5s ease;
-    bottom: 0;
-    z-index: 1;
-    position: absolute;
+@media (max-width: 767px) {
+    #hz-logo {
+        display: block;
+    }
+    
+    #logo {
+        display: none;
+    }
+    
     
 }
-
-.underline:hover:before{
-    left:0;
-}
-
-.underline:hover:before{
-    left:5px;
-}
-*/
