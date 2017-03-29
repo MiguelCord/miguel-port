@@ -25,7 +25,7 @@ font-family: 'Roboto Mono', monospace;
 
 .navbar-nav > li > a {
     color: whitesmoke;
-    font-size: 1.2em;
+    font-size: 18px;
     font-family: 'Roboto Mono', monospace;
     z-index: 1;
 }
@@ -88,14 +88,6 @@ font-family: 'Roboto Mono', monospace;
 
 
 
-/*----- Work-Page Horizontal Navigation bar -----*/
-.go-left-sm {
-    margin-left: -2.18em;
-}
-/*------------ -----------*/
-
-
-
 /*----- 3 Column Grid Layout -------*/
 .left-col {
     padding-top: 5em;
@@ -107,6 +99,7 @@ font-family: 'Roboto Mono', monospace;
 /*----- Left Column Grid Layout -------*/
 #logo {
     position: fixed;
+    max-width: 3.5em;
     max-width: 3.5em;
     width: 100%;
 }
@@ -121,13 +114,13 @@ font-family: 'Roboto Mono', monospace;
 /*-------------- ----------------*/
 
 
+
 /*----- Home Page -------*/
 .computers-img {
     background-image: url(images/front.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-    background-color: transparent;
     height: 100vh;
     width: 100%;
 }
@@ -145,26 +138,28 @@ font-family: 'Roboto Mono', monospace;
     z-index: -1;
 }
 
+/*
 .hero-header-name {
     font-family: 'Josefin Sans', sans-serif;
-    color: ghostwhite;
-    font-size: 5vw;
+    color: red;
+    font-size: 25px;
     font-weight: 800;
     margin-top: 1.5em;
     margin-bottom: -.5em;
 }
+*/
 
-.hero-header {
+#hero-header {
     font-family: 'Josefin Sans', sans-serif;
-    color: white;
-    font-size: 4vw;
+    color: ghostwhite;
+    font-size: 45px;
     font-weight: 800;
 }
 
 .hero-subheader {
     font-family: 'Josefin Sans', sans-serif;
     color: ghostwhite;
-    font-size: 2.5vw;
+    font-size: 22px;
     font-weight: 800;
     margin-top: 1.5em;
 }
@@ -266,14 +261,14 @@ font-family: 'Roboto Mono', monospace;
 
 .expertise-nav > li > a {
     color: black;
-    font-size: 1.2em;
+    font-size: 18px;
     font-family: 'Roboto Mono', monospace;
 }
 
 .hero-header-expertise {
     font-family: 'Josefin Sans', sans-serif;
     color: black;
-    font-size: 4vw;
+    font-size: 65px;
     font-weight: 800;
 }
 
@@ -300,13 +295,13 @@ font-family: 'Roboto Mono', monospace;
 .expertise-header {
     font-family: 'Roboto Mono', monospace;
     color: #fffffb;
-    font-size: 2vw;
+    font-size: 28px;
     font-weight: 800;
 }
 
 .expertise-body {
     font-family: 'Josefin Sans', sans-serif;
-    font-size: 1.3vw;
+    font-size: 20px;
     color: #fffffb;
     font-weight: 600;
 }
@@ -359,7 +354,7 @@ font-family: 'Roboto Mono', monospace;
 
 .hero-text {
     font-family: 'Josefin Sans', sans-serif;
-    font-size: 1.5em;
+    font-size: 20px;
     font-weight: 400;
     line-height: 1.4em;
 }
@@ -382,28 +377,35 @@ font-family: 'Roboto Mono', monospace;
 
 /*----- Footer -------*/
 .footer {
-    height: 100vh;
+    min-height: 100vh;
+    height: 100%;
+    display: flex;
     background-color: #0d0d0d;
 }
 
 .hero-footer {
     font-family: 'Roboto Mono', monospace;
     color: ghostwhite;
-    font-size: 1.3vw;
+    font-size: 25px;
     font-weight: 800;
-    margin-top: 5em;
+    margin-top: 75px;
 }
 
 .hero-footer-md {
     font-family: 'Roboto Mono', monospace;
     color: ghostwhite;
-    font-size: 2.8vw;
+    font-size: 19px;
     font-weight: 800;
     margin-top: -0.3em;  
 }
 
 a:hover {
     text-decoration: none;
+}
+
+.move-down-footer{
+    height: 80px;
+    margin-bottom: 100px;
 }
 
 /*------------ ------------*/
@@ -414,15 +416,16 @@ a:hover {
 
 .social-icons {
     text-align: center;
-    margin-top: 6em;
+    margin-top: 45px;
+    
 }
 
 .hero-footer-social {
     font-family: 'Roboto Mono', monospace;
     color: ghostwhite;
-    font-size: 1.3vw;
+    font-size: 15px;
     font-weight: 800;
-    margin-top: 2em;
+    margin-top: 15px;
 }
 
 a .hero-footer-social {
@@ -453,8 +456,6 @@ hr {
     }
     
     .item {
-        display: block;
-        margin-left: auto;
-        margin-right: auto;
-    }
+        width: 100%;
+    } 
 }
