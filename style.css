@@ -20,7 +20,7 @@ font-family: 'Roboto Mono', monospace;
  
 .navbar-nav > li {
     float: none;
-    display: block;
+    display: inline-block;
 }
 
 .navbar-nav > li > a {
@@ -80,6 +80,7 @@ font-family: 'Roboto Mono', monospace;
    margin-top: -2.2em;
 }
 
+
 #bs-example-navbar-collapse-1 {
     margin-left: 4em;
 }
@@ -131,6 +132,7 @@ font-family: 'Roboto Mono', monospace;
 }
 
 /*----- Center Column Grid Layout -------*/
+
 .main-text {
     width: 100%;
     padding: 0;
@@ -172,6 +174,7 @@ font-family: 'Roboto Mono', monospace;
 .about-me {
     width: 100%;
     margin-top: -30px;
+    margin-bottom: 30px;
 }
 
 .dot {
@@ -367,7 +370,9 @@ font-family: 'Roboto Mono', monospace;
     background-position: top;
     background-repeat: no-repeat;
     background-size: cover;
+    height: 580px;
 }
+
 
 
 /*------------ ------------*/
@@ -379,7 +384,7 @@ font-family: 'Roboto Mono', monospace;
     min-height: 100vh;
     height: 100%;
     display: flex;
-    background-color: #0d0d0d;
+    background-color: #000000;
 }
 
 .hero-footer {
@@ -440,9 +445,21 @@ a .hero-footer-social {
      #logo {
         display: none;
     }
+    
+    .navbar-nav {
+        margin-top: -70px;
+    }
 }
 
 @media (max-width: 767px) {
+    
+    .navbar-nav {
+        margin-top: 0px;
+    }
+    
+    .navbar-nav > li {
+        display: block;
+    }
     
     .work-content {
         list-style: none;
@@ -454,12 +471,13 @@ a .hero-footer-social {
     } 
     
     .me {
-        background-attachment: fixed;  
-        min-height: 100vh;
-        height: 100%;
-        width: 100%;
+        background-attachment: fixed; 
+        height: 100vh;
     }
     
+    .about-me {
+        margin-bottom: 0;
+    }
     
     .social-icons > a > h2 {
         display: block;
@@ -468,5 +486,10 @@ a .hero-footer-social {
     .nav > li > a {
         position: relative;
         display: block;
+    }
+    
+    .mid-col {
+        padding-left: 0;
+        padding-right: 0;
     }
 }
