@@ -282,7 +282,8 @@ font-family: 'Roboto Mono', monospace;
 .box-text {
     background-color: #4dc3ff;
     position: relative;
-    height: 440px;
+    height: 380px;
+
 }
 
 .expertise-text {
@@ -311,7 +312,7 @@ font-family: 'Roboto Mono', monospace;
 
 .box-img {
     position: relative;
-    height: 440px;
+    height: 380px;
 }
 
 .experience-imgs {
