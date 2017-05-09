@@ -20,7 +20,7 @@ font-family: 'Roboto Mono', monospace;
  
 .navbar-nav > li {
     float: none;
-    display: inline-block;
+    display: block;
 }
 
 .navbar-nav > li > a {
@@ -134,7 +134,8 @@ font-family: 'Roboto Mono', monospace;
 .main-text {
     width: 100%;
     padding: 0;
-    margin-top: -100px;
+    margin-top: -80px;
+    margin-bottom: 30px;
     z-index: -1;
 }
 
@@ -175,8 +176,8 @@ font-family: 'Roboto Mono', monospace;
 
 .dot {
     color: #FFFB17;
-    font-weight: 800;
-    font-size: 200px;
+    font-weight: 600;
+    font-size: 130px;
 }
 
 /*------------ -----------*/
@@ -267,7 +268,7 @@ font-family: 'Roboto Mono', monospace;
 .hero-header-expertise {
     font-family: 'Josefin Sans', sans-serif;
     color: black;
-    font-size: 38px;
+    font-size: 35px;
     font-weight: 800;
 }
 
@@ -330,9 +331,6 @@ font-family: 'Roboto Mono', monospace;
 
 
 /*----------- About Page ------------*/
-.about-header-img {
-    width: 100%;
-}
 
 .about-img {
     width: 100%;
@@ -344,9 +342,13 @@ font-family: 'Roboto Mono', monospace;
 #intro-about {
     font-family: 'Roboto Mono', monospace;
     line-height: 1.4em;
-    margin-top: -.3em;
     font-size: 20px;
     width: 100%;
+}
+
+.main-text {
+    margin-top: 20px;
+    margin-bottom: 100px;
 }
 
 .hero-text {
@@ -365,8 +367,6 @@ font-family: 'Roboto Mono', monospace;
     background-position: top;
     background-repeat: no-repeat;
     background-size: cover;
-    height: 100vh;
-    width: 100%;
 }
 
 
@@ -398,13 +398,13 @@ font-family: 'Roboto Mono', monospace;
     margin-top: -0.3em;  
 }
 
-a:hover {
-    text-decoration: none;
+.footer-down {
+    margin-top: 15px;
+    margin-bottom: 15px;
 }
 
-.move-down-footer{
-    height: 80px;
-    margin-bottom: 100px;
+a:hover {
+    text-decoration: none;
 }
 
 /*------------ ------------*/
@@ -413,10 +413,8 @@ a:hover {
 
 /*---------- Social Links----------*/
 
-.social-icons {
-    text-align: center;
-    margin-top: 45px;
-    
+.social-icons  {
+    margin-top: 85px;
 }
 
 .hero-footer-social {
@@ -424,7 +422,6 @@ a:hover {
     color: ghostwhite;
     font-size: 15px;
     font-weight: 800;
-    margin-top: 15px;
 }
 
 a .hero-footer-social {
@@ -433,21 +430,19 @@ a .hero-footer-social {
     margin-right: 1.3em;
 }
 
-hr {
-    width: 20%;
-    margin-top: 60px;
-}
 
 /*----------------------------------------*/
 
-@media (max-width: 767px) {
+@media (max-width: 991px) {
     #hz-logo {
         display: block;
     }
-    
-    #logo {
+     #logo {
         display: none;
     }
+}
+
+@media (max-width: 767px) {
     
     .work-content {
         list-style: none;
@@ -460,5 +455,18 @@ hr {
     
     .me {
         background-attachment: fixed;  
+        min-height: 100vh;
+        height: 100%;
+        width: 100%;
+    }
+    
+    
+    .social-icons > a > h2 {
+        display: block;
+    }
+    
+    .nav > li > a {
+        position: relative;
+        display: block;
     }
 }
